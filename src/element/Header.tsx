@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import { assets } from "../assets/assets";
+import { assets } from "../assets/homeAssets";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +43,9 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition ${
-        scrolled ? "bg-black/70 backdrop-blur-lg" : "bg-[black]"
+        scrolled
+          ? "bg-black/70 backdrop-blur-lg"
+          : "bg-[#FFFFFF0D] backdrop-blur-lg"
       }`}
     >
       <nav className="max-w-8xl mx-auto flex items-center justify-between px-10 xl:px-30 lg:px-5 py-4">

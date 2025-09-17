@@ -1,9 +1,8 @@
 import React from "react";
 
 interface HeadingProps {
-  title: string;
+  title: string | React.ReactNode;
 }
-
 const Heading: React.FC<HeadingProps> = ({ title }) => {
   return (
     <h2 className="main-text font-medium text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">

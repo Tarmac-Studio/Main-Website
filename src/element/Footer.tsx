@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { assets, socials } from "../assets/assets";
+import { assets, socials } from "../assets/homeAssets";
 import Heading from "../ui/Heading";
 
 const Footer: React.FC = () => {
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-cyan-400 transition-colors duration-300"
+                className="transition-transform duration-200 hover:scale-110"
               >
                 <img
                   src={social.icon}

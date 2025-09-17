@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { assets } from "../assets/assets";
+import { assets } from "../assets/homeAssets";
 import Heading from "../ui/Heading";
 import SectionHeader from "../ui/SectionHeader";
 import ButtonLink1 from "../ui/ButtonLink1";
 
 const Studio: React.FC = () => {
   return (
-    <section className="relative mt-50 w-full h-[450px] md:h-[400px] lg:h-[450px]">
+    <section className="relative w-full h-[450px] md:h-[400px] lg:h-[450px]">
       {/* Background Image */}
       <div className="flex justify-center items-center w-full h-full">
         <div className="relative w-full h-full overflow-hidden">
