@@ -20,14 +20,16 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-black text-white py-20 pb-10">
+    <footer className="bg-black text-white py-30 pb-10">
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start mb-12 lg:mb-16">
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <Heading title="Ready to bring your startup to life?" />
+            <h2 className="main-text font-medium text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 md:max-w-lg w-full">
+              Ready to bring your startup to life?
+            </h2>
 
             <p className="text-[#E3E3E5] text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
               Let's talk – and we will map out your launch plan together.

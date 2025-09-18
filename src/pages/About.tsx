@@ -5,3 +5,7 @@ const About = () => {
 };
 
 export default About;
+
+
+ Brand Identity UI/UX Design Functional Website
+          Social Media Management Search Engine Optimization

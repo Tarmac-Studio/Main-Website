@@ -106,18 +106,13 @@ body {
 }
 .services-border {
   border: 1px solid;
-  /* border-radius: 20px; */
+
   border-image-source: linear-gradient(
     260.45deg,
     #f6f4f4 -12.22%,
     #585858 103.25%
   );
 
-  background: linear-gradient(
-    260.45deg,
-    rgba(255, 255, 255, 0.1) -12.22%,
-    rgba(39, 39, 39, 0.1) 103.25%
-  );
-  border-radius: 20px;
   border-image-slice: 1;
+  /* border-radius: 20px; */
 }

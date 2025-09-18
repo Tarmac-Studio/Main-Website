@@ -17,14 +17,14 @@ const Solve: React.FC = () => {
             </>
           }
         />
-        <p className="sub-text text-xl mb-7">
+        <p className="sub-text md:text-xl text-base mb-7">
           We know early stage founders need speed, clarity, and smart execution;
           all without going through the stress of managing 3 separate Teams.
           Tarmac bridges the gap, we become your launchpad and launch partner,
           delivering:
         </p>
         <AnimatedH3 />
-        <p className="sub-text text-xl mt-4">
+        <p className="sub-text md:text-xl text-base mt-4">
           Whether you’re at idea stage or ready to launch — we’re your studio on
           demand.
         </p>

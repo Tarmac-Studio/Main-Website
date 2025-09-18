@@ -7,11 +7,9 @@ interface SectionHeaderProps {
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title }) => {
   return (
-    <div className="flex items-center justify-center gap-2 mb-5">
+    <div className="flex items-center justify-center gap-2 mb-0">
       <img src={assets.textLogo} alt="Logo" className="h-3 w-auto" />
-      <h3 className="uppercase cyan-text md:text-base text-sm font-bold">
-        {title}
-      </h3>
+      <h3 className="uppercase cyan-text text-sm font-bold">{title}</h3>
     </div>
   );
 };

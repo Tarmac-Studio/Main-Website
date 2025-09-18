@@ -34,9 +34,7 @@ const Process: React.FC = () => {
           ))}
         </div>
 
-        <ButtonLink2 to="https://www.ejideson.com/">
-          Book a Free Strategy Call
-        </ButtonLink2>
+        <ButtonLink2 to="/">Book a Free Strategy Call</ButtonLink2>
       </div>
     </section>
   );

@@ -12,23 +12,23 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
   return (
-    <div className="services-border p-8 hover:shadow-lg rounded-2xl transition-shadow duration-300">
-      <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+    <div className="border border-[#585858] md:px-8 md:py-20 px-8 py-10 rounded-2xl">
+      <h3 className="md:text-[36px] text-[26px] md:px-10 px-4 font-medium main-text mb-4 text-center">
         {title}
       </h3>
-      <p className="text-gray-600 text-center leading-relaxed">{description}</p>
+      <p className="sub-text text-base text-center">{description}</p>
     </div>
   );
 };
 
 const Services: React.FC = () => {
   return (
-    <section className="py-16 px-6 bg-black">
+    <section className="py-16 px-4 sm:px-6 md:px-10 bg-black">
       <div className="max-w-6xl mx-auto  text-center items-center">
         {/* Header */}
         <SectionHeader title="our services" />
         <Heading title="What we do" />
-        <p className="sub-text text-xl">
+        <p className="sub-text md:text-xl text-base mb-7">
           At Tarmac Digital Studio, we don’t just provide services—we deliver
           transformative digital solutions. Whether you're a startup building
           from scratch or a growing business looking to scale, our expert team
@@ -37,7 +37,7 @@ const Services: React.FC = () => {
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 ">
           {/* First 4 services in 2x2 grid */}
           {homeServices.slice(0, 4).map((service, index) => (
             <ServiceCard
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <Heading title=" Let's Build Something Incredible" />
 
-          <p className="sub-text text-xl">
+          <p className="sub-text md:text-xl text-base mb-5">
             Whether you need a full-stack team or a specialist to fill the gap,
             we’re ready to collaborate and bring your ideas to life.
           </p>
