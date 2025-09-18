@@ -1,5 +1,5 @@
 import React from "react";
-import { assets, socials } from "../../assets/homeAssets";
+import { assets } from "../../assets/homeAssets";
 import ButtonLink2 from "../../ui/ButtonLink2";
 import ButtonLink1 from "../../ui/ButtonLink1";
 import { homeSocials, services } from "../../lib/HomeLib";

@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { assets, socials } from "../assets/homeAssets";
-import Heading from "../ui/Heading";
 
 const Footer: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [setMenuOpen] = useState(false);
 
   const [activeItem, setActiveItem] = useState("home");
   const handleNavClick = (item: string) => {
     setActiveItem(item);
-    setMenuOpen(false);
+    // setMenuOpen(false);
   };
   const navItems = [
     { label: "Home", slug: "home" },
