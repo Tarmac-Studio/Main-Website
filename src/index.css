@@ -116,3 +116,14 @@ body {
   border-image-slice: 1;
   /* border-radius: 20px; */
 }
+.services-wrapper {
+  background: linear-gradient(260.45deg, #f6f4f4 -12.22%, #585858 103.25%);
+  padding: 1px;
+  border-radius: 20px;
+}
+
+.services-inner {
+  background: white;
+  border-radius: 19px; /* Slightly smaller to account for the 1px wrapper */
+  padding: 32px;
+}

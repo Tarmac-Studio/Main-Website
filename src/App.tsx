@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ScrollTop, PageTransitionWrapper } from "./utils/ScrollTop";
-
-import Home from "./pages/Home";
 import Layout from "./utils/Layout";
+import Home from "./pages/Home";
 import About from "./pages/About";
 
 function App() {
