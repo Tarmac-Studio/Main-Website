@@ -4,22 +4,22 @@ export const team = [
   {
     name: "Aladeloye Joshua",
     role: "Founder & Design Lead",
-    image: aboutAssets.Aladeole,
+    image: aboutAssets.Aladeloye,
   },
   {
     name: "Olalere Olamilekan",
     role: "Co-Founder & Front End Lead",
-    image: aboutAssets.Gabriel,
+    image: aboutAssets.Leks,
   },
   {
     name: "Bolarinwa Boluwatife",
     role: "Co-Founder & Back End Lead",
-    image: aboutAssets.Aladeole,
+    image: aboutAssets.Bolex,
   },
   {
     name: "Adebayo Taiwo",
     role: "Project Manager & Software Developer",
-    image: aboutAssets.Gabriel,
+    image: aboutAssets.Titan,
   },
   {
     name: "Olajide Gabriel",
@@ -29,6 +29,6 @@ export const team = [
   {
     name: "Adebayo Kehinde",
     role: "Content Creator & Social Media Manager",
-    image: aboutAssets.Aladeole,
+    image: aboutAssets.Kenny,
   },
 ];

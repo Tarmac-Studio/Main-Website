@@ -25,7 +25,7 @@ const TarmacJourney: React.FC = () => {
             So, we built Tarmac to be different. <br />A place where:
           </p>
 
-          <ul className="list-disc list-inside mt-4 space-y-2 text-gray-300">
+          <ul className="list-disc list-inside mt-4 space-y-2 sub-text">
             <li>Ideas are understood deeply before they’re built.</li>
             <li>
               Design and development work in sync (no lost communication).
@@ -33,7 +33,7 @@ const TarmacJourney: React.FC = () => {
             <li>Projects move fast without sacrificing quality.</li>
           </ul>
 
-          <p className="mt-4 text-gray-300 leading-relaxed">
+          <p className="mt-4 sub-text leading-relaxed">
             day, we help founders, startups, and businesses bring their ideas to
             life — faster, smarter, and with zero guesswork.
           </p>

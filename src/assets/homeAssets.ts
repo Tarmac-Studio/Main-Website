@@ -14,12 +14,13 @@ import Renee from "../assets/images/Home/Renee.png";
 import Strategy from "../assets/images/Home/Strategy.svg";
 import Design from "../assets/images/Home/Design.svg";
 import Launch from "../assets/images/Home/Launch.svg";
-import Background from "../assets/images/Home/Background.webp";
+import Background from "../assets/images/Home/Background.svg";
 import homeInstagram from "../assets/images/Home/instagram.svg";
 import homeLinkedin from "../assets/images/Home/linkedin.svg";
 import homeTiktok from "../assets/images/Home/tiktok.svg";
 import homeTwitter from "../assets/images/Home/twitter.svg";
 import Cursor from "../assets/images/Home/Cursor.svg";
+import Services from "../assets/images/Home/Services.svg";
 
 export const assets = {
   Background,
@@ -40,6 +41,7 @@ export const assets = {
   homeTiktok,
   homeTwitter,
   Cursor,
+  Services,
 };
 
 export const socials = [

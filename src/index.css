@@ -124,6 +124,6 @@ body {
 
 .services-inner {
   background: white;
-  border-radius: 19px; /* Slightly smaller to account for the 1px wrapper */
+  border-radius: 19px;
   padding: 32px;
 }

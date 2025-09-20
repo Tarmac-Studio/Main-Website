@@ -16,18 +16,6 @@ const Hero: React.FC = () => {
         backgroundPosition: "center",
       }}
     >
-      {" "}
-      <div className="absolute inset-0 bg-black" />
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url(${assets.Background})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          opacity: 0.5,
-        }}
-      ></div>
       {/* Main Content */}
       <div className="relative z-20 max-w-6xl px-4 sm:px-6 md:px-10 flex-grow flex flex-col justify-center">
         {services.map((service, index) => (
@@ -45,7 +33,7 @@ const Hero: React.FC = () => {
         </h1>
 
         {/* Subtext */}
-        <p className="sub-text text-xl md:mb-8 sm:mb-6 mb-4 md:mt-6 sm:mt-4 mt-2">
+        <p className="sub-text md:text-xl text-lg md:mb-8 sm:mb-6 mb-4 md:mt-6 sm:mt-4 mt-2">
           We help founders transform ideas into beautiful, functional products —
           fast. <br />
           From branding to strategy to functional development, all under one

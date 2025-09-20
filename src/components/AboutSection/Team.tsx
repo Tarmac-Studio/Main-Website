@@ -11,7 +11,7 @@ const Team: React.FC = () => {
           <h2 className="main-text font-medium text-4xl md:text-5xl  leading-tight mb-6">
             The People Who Power Tarmac
           </h2>
-          <p className="sub-text font-medium text-base max-w-md mx-auto">
+          <p className="sub-text font-medium text-xl max-w-md mx-auto">
             Every successful project starts with a team that cares. At Tarmac,
             our crew is a blend of designers, developers, strategists, and
             storytellers — all united by one mission: to build products that
@@ -24,20 +24,22 @@ const Team: React.FC = () => {
           {team.map((member, i) => (
             <div key={i} className="flex flex-col items-start">
               {/* Frame */}
-              <div className="rounded-2xl p-[2px] bg-gradient-to-tr from-[#00ffff] to-[#ffffff] w-full">
-                <div className="bg-black rounded-2xl overflow-hidden">
+              <div className="rounded-[20px] border-2 border-[#00ffff] w-full">
+                <div className="rounded-[20px] overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full p-2 object-cover rounded-2xl"
+                    className="w-full h-full p-2 object-cover rounded-[20px]"
                   />
                 </div>
               </div>
 
               <div className="flex justify-between items-center w-full mt-4">
                 <div>
-                  <h3 className="text-lg font-semibold">{member.name}</h3>
-                  <p className="text-sm text-gray-400">{member.role}</p>
+                  <h3 className="text-2xl font-medium main-text">
+                    {member.name}
+                  </h3>
+                  <p className="text-base sub-text italic">{member.role}</p>
                 </div>
                 <a>
                   <img
