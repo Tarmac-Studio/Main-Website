@@ -21,6 +21,7 @@ import homeTiktok from "../assets/images/Home/tiktok.svg";
 import homeTwitter from "../assets/images/Home/twitter.svg";
 import Cursor from "../assets/images/Home/Cursor.svg";
 import Services from "../assets/images/Home/Services.svg";
+import Contact from "../assets/images/Home/Contact.svg";
 
 export const assets = {
   Background,
@@ -42,6 +43,7 @@ export const assets = {
   homeTwitter,
   Cursor,
   Services,
+  Contact,
 };
 
 export const socials = [

@@ -12,7 +12,7 @@ const Testimonials: React.FC = () => {
         <Heading title="What Founders are saying" />
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-justify">
+        <div className="md:mt-15 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-justify">
           {testimonials.map((t) => (
             <div key={t.id} className="box-back  p-6 ">
               {/* Profile */}

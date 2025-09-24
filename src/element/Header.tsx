@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { assets } from "../assets/homeAssets";
+import ButtonLink2 from "../ui/ButtonLink2";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -76,9 +77,8 @@ const Header: React.FC = () => {
         </div>
 
         {/* Button */}
-        <a className="hidden lg:flex cyan-back sat-font cursor-pointer text-black font-medium text-base px-6 py-2 rounded-full items-center justify-center gap-2 transition-colors duration-300">
-          Notify Me
-          <img src={assets.arrow} alt="Arrow" className="w-5 h-auto" />
+        <a className="hidden lg:flex cyan-back sat-font cursor-pointer text-black font-medium text-base px-8 py-3 rounded-full items-center justify-center gap-2 transition-colors duration-300">
+          Book a Strategy Call
         </a>
 
         {/* Mobile Menu Button */}
@@ -129,10 +129,10 @@ const Header: React.FC = () => {
             </div>
 
             {/* Mobile Button */}
-            <button className="cyan-back sat-font cursor-pointer text-black font-medium text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 w-full">
-              Notify Me
-              <img src={assets.arrow} alt="Arrow" className="w-5 h-auto" />
-            </button>
+
+            <ButtonLink2 to="/contact-us#contact">
+              Book a strategy call
+            </ButtonLink2>
           </div>
         </div>
       </nav>

@@ -12,18 +12,24 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
   return (
-    <div className="border border-[#585858] md:px-8 md:py-20 px-8 py-10 rounded-2xl">
+    <div className="border border-[#585858] md:px-12 md:py-20 px-8 py-10 rounded-[20px]">
       <h3 className="md:text-[36px] text-[26px] md:px-10 px-4 font-medium main-text mb-4 text-center">
         {title}
       </h3>
-      <p className="sub-text text-base text-center">{description}</p>
+      <p className="sub-text md:text-base text-sm text-center">{description}</p>
     </div>
   );
 };
 
 const Services: React.FC = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 md:px-10 bg-black">
+    <section
+      className="py-16 px-4 sm:px-6 md:px-10"
+      style={{
+        background:
+          "black radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%)",
+      }}
+    >
       <div className="max-w-6xl mx-auto  text-center items-center">
         {/* Header */}
         <SectionHeader title="our services" />
@@ -68,11 +74,11 @@ const Services: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <ButtonLink1 to="/contact-us#contact">
-            Book a strategy call
-          </ButtonLink1>
+          <ButtonLink1 to="/contact-us#contact">View All Services</ButtonLink1>
 
-          <ButtonLink2 to="/contact-us#contact">See our works</ButtonLink2>
+          <ButtonLink2 to="/contact-us#contact">
+            Book A Discovery Call
+          </ButtonLink2>
         </div>
       </div>
     </section>

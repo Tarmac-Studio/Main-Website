@@ -104,26 +104,3 @@ body {
   background: none;
   color: #00ffff;
 }
-.services-border {
-  border: 1px solid;
-
-  border-image-source: linear-gradient(
-    260.45deg,
-    #f6f4f4 -12.22%,
-    #585858 103.25%
-  );
-
-  border-image-slice: 1;
-  /* border-radius: 20px; */
-}
-.services-wrapper {
-  background: linear-gradient(260.45deg, #f6f4f4 -12.22%, #585858 103.25%);
-  padding: 1px;
-  border-radius: 20px;
-}
-
-.services-inner {
-  background: white;
-  border-radius: 19px;
-  padding: 32px;
-}
