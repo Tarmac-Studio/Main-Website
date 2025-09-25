@@ -1,5 +1,4 @@
 import React from "react";
-import { testimonials } from "../../lib/HomeLib";
 import SectionHeader from "../../ui/SectionHeader";
 import Heading from "../../ui/Heading";
 
