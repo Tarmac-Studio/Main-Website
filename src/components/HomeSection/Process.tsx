@@ -7,7 +7,7 @@ import ButtonLink2 from "../../ui/ButtonLink2";
 const Process: React.FC = () => {
   return (
     <section className="relative bg-black text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center justify-center">
         {/* Label */}
         <SectionHeader title="How We Work With You" />
         <Heading title="Our Process" />

@@ -58,6 +58,7 @@ body {
   background-clip: text;
   color: transparent;
 }
+
 .sub-text {
   color: #e3e3e5;
 }
@@ -90,6 +91,14 @@ body {
     rgba(39, 39, 39, 0.1) 103.25%
   );
   border-radius: 20px;
+}
+
+.tarmac-journey {
+  background: radial-gradient(
+    82.54% 147.56% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 255, 255, 0.5) 100%
+  );
 }
 
 .back {
