@@ -4,7 +4,7 @@ import Layout from "./utils/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-
+import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
@@ -36,6 +36,16 @@ function App() {
             <Layout>
               <PageTransitionWrapper>
                 <Services />
+              </PageTransitionWrapper>
+            </Layout>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Layout>
+              <PageTransitionWrapper>
+                <Contact />
               </PageTransitionWrapper>
             </Layout>
           }
