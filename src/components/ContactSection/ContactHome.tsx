@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../../shared/HeroSection";
 import { contactAssets } from "../../assets/contactAssets";
 
-const ServicesHome: React.FC = () => {
+const ContactHome: React.FC = () => {
   return (
     <HeroSection
       backgroundImage={contactAssets.Contact}
@@ -17,4 +17,4 @@ const ServicesHome: React.FC = () => {
   );
 };
 
-export default ServicesHome;
+export default ContactHome;

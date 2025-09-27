@@ -1,6 +1,7 @@
 import ContactHome from "../components/ContactSection/ContactHome";
 import ContactLaunch from "../components/ContactSection/ContactLaunch";
 import ContactForm from "../components/ContactSection/ContactForm";
+import Studio from "../shared/Studio";
 
 const Contact = () => {
   return (
@@ -8,6 +9,7 @@ const Contact = () => {
       <ContactHome />
       <ContactLaunch />
       <ContactForm />
+      <Studio />
     </>
   );
 };
