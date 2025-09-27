@@ -45,7 +45,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition ${
         scrolled
-          ? "bg-black/70 backdrop-blur-lg"
+          ? "bg-transparent backdrop-blur-lg"
           : "bg-[#FFFFFF0D] backdrop-blur-lg"
       }`}
     >
@@ -77,9 +77,13 @@ const Header: React.FC = () => {
         </div>
 
         {/* Button */}
-        <a className="hidden lg:flex cyan-back sat-font cursor-pointer text-black font-medium text-base px-8 py-3 rounded-full items-center justify-center gap-2 transition-colors duration-300">
+        <Link
+          target="blank"
+          to="https://calendly.com/tarmacdigitalstudio"
+          className="hidden lg:flex cyan-back sat-font cursor-pointer text-black font-medium text-base px-8 py-3 rounded-full items-center justify-center gap-2 transition-colors duration-300"
+        >
           Book a Strategy Call
-        </a>
+        </Link>
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center">
@@ -111,7 +115,7 @@ const Header: React.FC = () => {
 
           <div className="flex flex-col justify-center h-full px-6 pb-20">
             {/* Mobile Navigation - Stacked Buttons */}
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4 mb-10">
               {navItems.map((item) => (
                 <Link
                   key={item.slug}
@@ -130,7 +134,10 @@ const Header: React.FC = () => {
 
             {/* Mobile Button */}
 
-            <ButtonLink2 to="/contact-us#contact">
+            <ButtonLink2
+              target="blank"
+              to="https://calendly.com/tarmacdigitalstudio"
+            >
               Book a strategy call
             </ButtonLink2>
           </div>

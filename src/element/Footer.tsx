@@ -37,12 +37,19 @@ const Footer: React.FC = () => {
 
           {/* Right Side - Buttons */}
           <div className="w-full lg:w-1/2 mt-6 lg:mt-12 flex flex-col items-center lg:items-start justify-center gap-4 sm:gap-5 px-4  lg:px-5">
-            <a className="border-2 border-[#00FFFF] cyan-text px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300 ">
+            <Link
+              to="https://calendly.com/tarmacdigitalstudio"
+              target="blank"
+              className="border-2 border-[#00FFFF] cyan-text px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300 "
+            >
               Book a Strategy Call
-            </a>
-            <a className="border-2 border-[#00FFFF] text-black cyan-back px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300">
+            </Link>
+            <Link
+              to="/contact"
+              className="border-2 border-[#00FFFF] text-black cyan-back px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300"
+            >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
