@@ -1,7 +1,7 @@
 import ContactHome from "../components/ContactSection/ContactHome";
 import ContactLaunch from "../components/ContactSection/ContactLaunch";
 import ContactForm from "../components/ContactSection/ContactForm";
-import Studio from "../shared/Studio";
+import ContactStudio from "../components/ContactSection/ContactStudio";
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
       <ContactHome />
       <ContactLaunch />
       <ContactForm />
-      <Studio />
+      <ContactStudio />
     </>
   );
 };

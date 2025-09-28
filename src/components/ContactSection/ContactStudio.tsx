@@ -1,10 +1,11 @@
 import React from "react";
-import { assets } from "../assets/homeAssets";
-import Heading from "../ui/Heading";
-import SectionHeader from "../ui/SectionHeader";
-import ButtonLink1 from "../ui/ButtonLink1";
+import { assets } from "../../assets/homeAssets";
+import Heading from "../../ui/Heading";
+import SectionHeader from "../../ui/SectionHeader";
+import ContactButton1 from "../../ui/ContactButton1";
+import ContactButton2 from "../../ui/ContactButton2";
 
-const Studio: React.FC = () => {
+const ContactStudio: React.FC = () => {
   return (
     <section className="relative w-full h-[450px] md:h-[400px] lg:h-[450px]">
       {/* Background Image */}
@@ -31,12 +32,14 @@ const Studio: React.FC = () => {
           Led by a Team of Strategist, we bring strategy, aesthetics, and
           no-code together to move fast — and build what matters.
         </p>{" "}
-        <div className="flex space-x-4 justify-center">
-          <ButtonLink1 to="/services">View Services</ButtonLink1>
-        </div>
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+    `        <ContactButton1 to="/services">View Services</ContactButton1>
+            <ContactButton2 to="/about-us" target="_self">Read More</ContactButton2>
+`        </div>
+
       </div>
     </section>
   );
 };
 
-export default Studio;
+export default ContactStudio;
