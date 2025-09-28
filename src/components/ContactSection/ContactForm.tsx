@@ -182,7 +182,7 @@ const ContactForm: React.FC = () => {
             Contact Us
           </p>
           <h2 className="font-bold text-3xl sm:text-5xl leading-[110%] bg-gradient-to-l from-[#F6F4F4] to-[#585858] bg-clip-text text-transparent">
-            Get in Touch
+            Get in <br /> Touch
           </h2>
         </div>
 

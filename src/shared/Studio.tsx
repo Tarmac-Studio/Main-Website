@@ -3,6 +3,7 @@ import { assets } from "../assets/homeAssets";
 import Heading from "../ui/Heading";
 import SectionHeader from "../ui/SectionHeader";
 import ButtonLink1 from "../ui/ButtonLink1";
+import ButtonLink2 from "../ui/ButtonLink2";
 
 const Studio: React.FC = () => {
   return (
@@ -31,7 +32,10 @@ const Studio: React.FC = () => {
           Led by a Team of Strategist, we bring strategy, aesthetics, and
           no-code together to move fast — and build what matters.
         </p>{" "}
-        <ButtonLink1 to="/contact-us#contact">View Services</ButtonLink1>
+        <div className="flex space-x-4 justify-center">
+          <ButtonLink1 to="/services">View Services</ButtonLink1>
+          <ButtonLink2 to="/about-us" target="_self">Read More</ButtonLink2>
+        </div>
       </div>
     </section>
   );
