@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import stars1 from "../../assets/images/About/stars1.svg";
+import Stars from "../../assets/images/About/Stars.png";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -169,7 +169,7 @@ const ContactForm: React.FC = () => {
     <section className="relative bg-black text-white">
       {/* Stars Background */}
       <img
-        src={stars1}
+        src={Stars}
         alt="Stars Background"
         className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
       />
