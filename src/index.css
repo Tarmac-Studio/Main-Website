@@ -101,6 +101,12 @@ body {
   );
 }
 
+.service-border {
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(260.45deg, #f6f4f4 -12.22%, #585858 103.25%);
+  border-image-slice: 1;
+}
+
 .back {
   background: radial-gradient(
     50% 50% at 50% 50%,

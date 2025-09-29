@@ -29,7 +29,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       }}
     >
       {/* Main Content */}
-      <div className="relative z-20 max-w-6xl px-4 sm:px-6 md:px-10 flex-grow flex flex-col justify-center">
+      <div className="relative z-20 max-w-6xl px-4 sm:px-6 md:px-10 flex-grow flex flex-col justify-center mt-8 sm:mt-0">
+        {/* <div className="relative z-20 max-w-6xl px-4 sm:px-6 md:px-10 flex-grow flex flex-col justify-center"> */}
         {badgeText && (
           <p className="cyan-text text-sm font-semibold tracking-wide mb-4">
             {badgeText}
@@ -37,15 +38,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         )}
 
         {/* Title */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
           {title}
         </h1>
+        {/* <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
+          {title}
+        </h1> */}
 
         {/* Subtitle */}
         {subtitle && (
-          <p className="sub-text md:text-xl text-lg md:mb-8 sm:mb-6 mb-4 md:mt-6 sm:mt-2 mt-2">
+          <p className="sub-text text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 mt-2 sm:mt-2 md:mt-6">
             {subtitle}
           </p>
+          // <p className="sub-text md:text-xl text-lg md:mb-8 sm:mb-6 mb-4 md:mt-6 sm:mt-2 mt-2">
+          //   {subtitle}
+          // </p>
         )}
 
         {/* CTA Buttons */}
