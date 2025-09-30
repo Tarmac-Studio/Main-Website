@@ -31,7 +31,7 @@ const Studio: React.FC = () => {
           Led by a Team of Strategist, we bring strategy, aesthetics, and
           no-code together to move fast — and build what matters.
         </p>{" "}
-        <div className="flex space-x-4 justify-center">
+        <div className="flex justify-center">
           <ButtonLink1 to="/services">View Services</ButtonLink1>
         </div>
       </div>

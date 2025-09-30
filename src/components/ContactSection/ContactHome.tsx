@@ -12,7 +12,6 @@ const ContactHome: React.FC = () => {
         <p className="text-2xl md:text-5xl font-light max-w-5xl mx-auto mt-0 tracking-wider leading-relaxed">
           Let's Build Something Great Together
         </p>
-
       }
     />
   );
