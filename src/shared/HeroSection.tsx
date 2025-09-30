@@ -40,7 +40,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         )}
 
         {/* Title */}
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
           {title}
         </h1>
         {/* <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
