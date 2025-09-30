@@ -24,9 +24,9 @@ const ServicesHome: React.FC = () => {
         <ButtonLink1 to="/contact-us#contact">Work with Us</ButtonLink1>
       }
       secondaryBtn={
-        <ButtonLink2 to="/portfolio">View our Portfolio</ButtonLink2>
+        <ButtonLink2 to="/contact-us#contact">View our Portfolio</ButtonLink2>
       }
-      socials={homeSocials} // Pass socials here (mobile and tablet only)
+      socials={homeSocials}
     />
   );
 };

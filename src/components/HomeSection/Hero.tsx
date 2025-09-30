@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       {/* Socials at Bottom */}
-      <div className="relative z-20 flex justify-center pb-8 sm:pb-10 md:pb-14 flex-shrink-0 block lg:hidden">
+      <div className="relative z-20 flex justify-center pb-8 sm:pb-10 md:pb-14 flex-shrink-0">
         <div className="flex gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10">
           {homeSocials.map(({ icon, link, alt }, idx) => (
             <a

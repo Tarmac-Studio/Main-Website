@@ -60,10 +60,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         )}
       </div>
 
-      {/* Socials - visible only on mobile and tablet */}
+      {/* Socials */}
       {socials && socials.length > 0 && (
-        <div className="relative z-20 flex justify-center pb-8 sm:pb-10 md:pb-14 flex-shrink-0 block lg:hidden">
-          <div className="flex gap-x-4 sm:gap-x-6 md:gap-x-8">
+        <div className="relative z-20 flex justify-center pb-8 sm:pb-10 md:pb-14 flex-shrink-0">
+          <div className="flex gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10">
             {socials.map(({ icon, link, alt }, idx) => (
               <a
                 key={idx}
