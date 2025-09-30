@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <ButtonLink1 to="/contact-us#contact">
+          <ButtonLink1 to="https://calendly.com/tarmacdigitalstudio">
             Book a strategy call
           </ButtonLink1>
 
