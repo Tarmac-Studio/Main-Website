@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../../shared/HeroSection";
 import { contactAssets } from "../../assets/contactAssets";
+import { homeSocials } from "../../lib/HomeLib";
 
 const ContactHome: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const ContactHome: React.FC = () => {
           Let's Build Something Great Together
         </p>
       }
+      socials={homeSocials}
     />
   );
 };
