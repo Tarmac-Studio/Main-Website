@@ -20,7 +20,7 @@ const Process: React.FC = () => {
               <img
                 src={step.icon}
                 alt="social-icon"
-                className="md:w-18 h-auto w-12 object-cover"
+                className="md:w-18 h-auto w-12 object-cover cursor-pointer"
               />
 
               {/* Title */}
@@ -34,7 +34,12 @@ const Process: React.FC = () => {
           ))}
         </div>
 
-        <ButtonLink2 to="/">Book a Free Strategy Call</ButtonLink2>
+        <ButtonLink2
+          target="blank"
+          to="https://calendly.com/tarmacdigitalstudio"
+        >
+          Book a Free Strategy Call
+        </ButtonLink2>
       </div>
     </section>
   );

@@ -21,10 +21,14 @@ const ServicesHome: React.FC = () => {
         </>
       }
       primaryBtn={
-        <ButtonLink1 to="/contact-us#contact">Work with Us</ButtonLink1>
+        <ButtonLink1 target="_self" to="/contact-us">
+          Work with Us
+        </ButtonLink1>
       }
       secondaryBtn={
-        <ButtonLink2 to="/contact-us#contact">View our Portfolio</ButtonLink2>
+        <ButtonLink2 target="_self" to="/portfolio">
+          View our Portfolio
+        </ButtonLink2>
       }
       socials={homeSocials}
     />

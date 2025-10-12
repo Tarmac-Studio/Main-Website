@@ -10,7 +10,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Satoshi";
   src: url("./assets/fonts/Satoshi-Regular.woff2") format("woff2"),
@@ -19,7 +18,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Satoshi";
   src: url("./assets/fonts/Satoshi-Medium.woff2") format("woff2"),
@@ -118,4 +116,52 @@ body {
   -webkit-text-fill-color: initial;
   background: none;
   color: #00ffff;
+}
+.founder-back {
+  background: linear-gradient(
+      260.45deg,
+      rgba(255, 255, 255, 0.1) -12.22%,
+      rgba(39, 39, 39, 0.1) 103.25%
+    ),
+    linear-gradient(
+      98.69deg,
+      rgba(0, 255, 255, 0) 59.67%,
+      rgba(0, 255, 255, 0.8) 190.83%
+    );
+}
+.goals-back {
+  background: linear-gradient(
+      260.45deg,
+      rgba(255, 255, 255, 0.1) -12.22%,
+      rgba(39, 39, 39, 0.1) 103.25%
+    ),
+    linear-gradient(
+      154.31deg,
+      rgba(0, 255, 255, 0) 21.98%,
+      rgba(0, 255, 255, 0.8) 401.25%
+    );
+}
+.speed-back {
+  background: linear-gradient(
+      260.45deg,
+      rgba(255, 255, 255, 0.1) -12.22%,
+      rgba(39, 39, 39, 0.1) 103.25%
+    ),
+    linear-gradient(
+      280.96deg,
+      rgba(0, 255, 255, 0) 81.28%,
+      rgba(0, 255, 255, 0.8) 203.59%
+    );
+}
+.execution-back {
+  background: linear-gradient(
+      260.45deg,
+      rgba(255, 255, 255, 0.1) -12.22%,
+      rgba(39, 39, 39, 0.1) 103.25%
+    ),
+    linear-gradient(
+      166.83deg,
+      rgba(0, 255, 255, 0) 71.54%,
+      rgba(0, 255, 255, 0.8) 90.52%
+    );
 }

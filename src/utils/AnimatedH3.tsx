@@ -19,7 +19,7 @@ const AnimatedH3 = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
         setIsAnimating(false);
       }, 400);
-    }, 2500);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
