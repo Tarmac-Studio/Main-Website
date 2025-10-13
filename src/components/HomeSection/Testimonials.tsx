@@ -26,12 +26,14 @@ const Testimonials: React.FC = () => {
                   <h4 className="font-bold sub-text md:text-base text-sm">
                     {t.name}
                   </h4>
-                  <p className="text-xs text-[#979797] italic ">{t.role}</p>
+                  <p className="md:text-sm text-xs text-[#979797] italic ">
+                    {t.role}
+                  </p>
                 </div>
               </div>
 
               {/* Quote */}
-              <p className="sub-text md:text-sm text-xs leading-relaxed">
+              <p className="sub-text md:text-base text-sm leading-relaxed">
                 {t.quote}
               </p>
             </div>

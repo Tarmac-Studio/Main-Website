@@ -74,9 +74,14 @@ const Services: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <ButtonLink1 to="/contact-us#contact">View All Services</ButtonLink1>
+          <ButtonLink1 target="_self" to="/services">
+            View All Services
+          </ButtonLink1>
 
-          <ButtonLink2 to="/contact-us#contact">
+          <ButtonLink2
+            target="blank"
+            to="https://calendly.com/tarmacdigitalstudio"
+          >
             Book A Discovery Call
           </ButtonLink2>
         </div>

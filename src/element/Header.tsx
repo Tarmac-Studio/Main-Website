@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           : "bg-[#FFFFFF0D] backdrop-blur-lg"
       }`}
     >
-      <nav className="max-w-8xl mx-auto flex items-center justify-between px-10 xl:px-30 lg:px-5 py-4">
+      <nav className="max-w-8xl mx-auto flex items-center justify-between px-5 xl:px-30 lg:px-5 py-4">
         {/* Logo */}
         <div className="flex items-center">
           <img src={assets.Logo} alt="Logo" className="h-6 w-auto" />
@@ -102,11 +102,11 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed top-0 right-0 w-full h-screen bg-black/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out lg:hidden ${
+          className={`fixed top-0 right-0 w-full h-screen overflow-hidden bg-black/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out lg:hidden ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex justify-end px-6 pt-6">
+          <div className="flex justify-end px-10 pt-4">
             <FaTimes
               className="text-3xl text-[#00ffff] cursor-pointer"
               onClick={toggleMenu}

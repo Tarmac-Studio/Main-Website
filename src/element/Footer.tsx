@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <Link
               to="https://calendly.com/tarmacdigitalstudio"
               target="blank"
-              className="border-2 border-[#00FFFF] cyan-text px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300 "
+              className="border-2 border-[#00FFFF] hover:text-black hover:bg-[#00FFFF] text-[#00FFFF] px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300 "
             >
               Book a Strategy Call
             </Link>
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Mobile Layout */}
-        <div className="block lg:hidden px-6 ">
+        <div className="block lg:hidden px-5 ">
           {/* Logo and Social Icons */}
           <div className="flex items-center justify-between mb-8">
             <img src={assets.darkLogo} alt="Logo" className="h-6 w-auto" />
