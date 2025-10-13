@@ -15,7 +15,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
   badgeText,
   title,
-  titleClassName,
   subtitle,
   primaryBtn,
   secondaryBtn,
