@@ -1,7 +1,7 @@
 import Logo from "../assets/icons/Logo.svg";
 import arrow from "../assets/icons/Arrow.svg";
 import Instagram from "../assets/icons/instagram.svg";
-import Linkedin from "../assets/icons/linkedin.svg";
+// import Linkedin from "../assets/icons/linkedin.svg";
 import Tiktok from "../assets/icons/tiktok.svg";
 import Twitter from "../assets/icons/twitter.svg";
 import darkLogo from "../assets/icons/darkLogo.svg";
