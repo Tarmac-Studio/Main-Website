@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 interface ButtonLinkProps {
   to: string;
-  target: string;
+  target?: string;
   children: React.ReactNode;
 }
 

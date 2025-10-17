@@ -165,3 +165,43 @@ body {
       rgba(0, 255, 255, 0.8) 90.52%
     );
 }
+
+
+/* The core container that holds the visible portion of the image */
+.portfolio-card {
+  /* CRITICAL: Hides the part of the image not in view */
+  overflow: hidden;
+
+  border-radius: 8px;
+  background-color: #333; /* Fallback color */
+  cursor: pointer;
+
+  /* Base shadow for non-hover state */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  /* Ensure only framer-motion manages transformations like scale */
+  transform-origin: center;
+  will-change: transform, box-shadow; /* Optimization hint */
+}
+
+
+/* PortfolioGrid.css */
+.portfolio-container {
+  display: grid;
+  /* FIX: Setting two columns explicitly for the requested look. */
+  /* On large screens, it will be 2 columns. */
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 5px 5px; /* Vertical and horizontal gap */
+  justify-content: center;
+  max-width: 1000px; /* Reduced max width to enforce 2 columns side-by-side */
+  margin: 0 auto;
+}
+
+/* Optional: Center the content inside the card wrapper for better alignment */
+.portfolio-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
