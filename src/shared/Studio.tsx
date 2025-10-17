@@ -29,7 +29,7 @@ const Studio: React.FC = () => {
           startups across the globe launch with clarity, design, and momentum.
           <br />
           Led by a Team of Strategist, we bring strategy, aesthetics, and
-          no-code together to move fast — and build what matters.
+          no-code together to move fast, and build what matters.
         </p>{" "}
         <div className="flex justify-center">
           <ButtonLink1 target="_self" to="/services">

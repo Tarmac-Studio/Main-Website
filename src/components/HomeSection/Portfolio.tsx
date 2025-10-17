@@ -3,11 +3,12 @@ import SectionHeader from "../../ui/SectionHeader";
 import Heading from "../../ui/Heading";
 import PortfolioCard from "../portfolioSection/scrollCard";
 import { PROJECTS } from "../../lib/portfolioLib";
+import ButtonLink2 from "../../ui/ButtonLink2";
 
 const Portfolio: React.FC = () => {
   const topProjects = PROJECTS.slice(0, 4);
   return (
-    <section className="relative bg-black text-white px-4 sm:px-6 md:px-10 py-40">
+    <section className="relative bg-black text-white px-4 sm:px-6 md:px-10 py-15">
       <div className="max-w-7xl mx-auto text-center">
         <SectionHeader title="our portfolio" />
         <div className="max-w-4xl mx-auto">
@@ -18,6 +19,11 @@ const Portfolio: React.FC = () => {
         {topProjects.map((project) => (
           <PortfolioCard key={project.id} project={project} />
         ))}
+      </div>
+      <div className="flex items-center justify-center md:mt-15 mt-8">
+        <ButtonLink2 target="_self" to="/portfolio">
+          View all Portfolio
+        </ButtonLink2>
       </div>
     </section>
   );
