@@ -48,9 +48,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Subtitle */}
         {subtitle && (
-          <p className="sub-text text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 mt-2 sm:mt-2 md:mt-6">
+          <div className="sub-text text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 mt-2 sm:mt-2 md:mt-6">
             {subtitle}
-          </p>
+          </div>
           // <p className="sub-text md:text-xl text-lg md:mb-8 sm:mb-6 mb-4 md:mt-6 sm:mt-2 mt-2">
           //   {subtitle}
           // </p>
