@@ -6,14 +6,14 @@ import ButtonLink1 from "../ui/ButtonLink1";
 
 const Studio: React.FC = () => {
   return (
-    <section className="relative w-full h-[450px] md:h-[400px] lg:h-[450px]">
+    <section className="relative bg-black w-full h-[450px] md:h-[400px] lg:h-[450px]">
       {/* Background Image */}
       <div className="flex justify-center items-center w-full h-full">
         <div className="relative w-full h-full overflow-hidden">
           <img
             src={assets.Studio}
             alt="Banner Background"
-            className="absolute w-full h-full object-cover"
+            className="absolute w-full h-full object-contain"
           />
         </div>
       </div>
@@ -29,10 +29,12 @@ const Studio: React.FC = () => {
           startups across the globe launch with clarity, design, and momentum.
           <br />
           Led by a Team of Strategist, we bring strategy, aesthetics, and
-          no-code together to move fast — and build what matters.
+          no-code together to move fast, and build what matters.
         </p>{" "}
         <div className="flex justify-center">
-          <ButtonLink1 to="/services">View Services</ButtonLink1>
+          <ButtonLink1 target="_self" to="/services">
+            View Services
+          </ButtonLink1>
         </div>
       </div>
     </section>

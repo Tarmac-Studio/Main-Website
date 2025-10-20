@@ -8,10 +8,9 @@ const ContactHome: React.FC = () => {
     <HeroSection
       backgroundImage={contactAssets.Contact}
       title="Contact Us"
-      titleClassName="mt-40 mb-0"
       subtitle={
-        <p className="text-2xl md:text-5xl font-light max-w-5xl mx-auto mt-0 tracking-wider leading-relaxed">
-          Let's Build Something Great Together
+        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  main-text font-medium leading-tight ">
+          Let’s Build Something Great Together{" "}
         </p>
       }
       socials={homeSocials}

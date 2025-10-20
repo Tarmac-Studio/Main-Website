@@ -85,37 +85,18 @@ export const homeSocials = [
     link: "https://www.instagram.com/tarmacdigitalstudio",
     alt: "Instagram",
   },
-  {
-    icon: assets.homeLinkedin,
-    link: "https://www.linkedin.com/in/tarmac-digital-studio-62a182376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    alt: "Linkedin",
-  },
+  // {
+  //   icon: assets.homeLinkedin,
+  //   link: "https://www.linkedin.com/in/tarmac-digital-studio-62a182376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  //   alt: "Linkedin",
+  // },
   {
     icon: assets.homeTiktok,
     link: "https://www.tiktok.com/@tarmacdigitalstudio",
     alt: "Tiktok",
   },
 ];
-export const services = [
-  {
-    text: "Development",
-    position: "bottom-95 right-25",
-    delay: 700,
-    bgColor: "#84006EB2",
-    borderColor: "#84006E",
-    // pointerImage: development,
-    pointerPosition: "bottom",
-  },
-  {
-    text: "Product Design",
-    position: "bottom-95 left-35",
-    delay: 900,
-    bgColor: "#000791B2",
-    borderColor: "#000791",
-    // pointerImage: product,
-    pointerPosition: "top",
-  },
-];
+
 export const homeServices = [
   {
     title: "Branding",
@@ -135,7 +116,7 @@ export const homeServices = [
   {
     title: "Social Media Management",
     description:
-      "Social media isn’t just about posting—it’s about telling your brand story, building trust, and driving action. We manage, grow, and engage your audience with compelling, data-backed strategies.",
+      "Social media isn’t just about posting, it’s about telling your brand story, building trust, and driving action. We manage, grow, and engage your audience with compelling, data-backed strategies.",
   },
   {
     title: "Search Engine Optimization",

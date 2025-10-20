@@ -12,11 +12,9 @@ const AboutHome: React.FC = () => {
       badgeText="TARMAC DIGITAL STUDIO"
       title="Building Digital Products That Drive Growth"
       subtitle="At Tarmac, we’re not just developers or designers — we’re your product partners. From idea to launch, we turn your vision into impactful digital solutions that scale."
-      primaryBtn={
-        <ButtonLink1 to="/contact-us#contact">Work with Us</ButtonLink1>
-      }
+      primaryBtn={<ButtonLink1 to="/contact">Work with Us</ButtonLink1>}
       secondaryBtn={
-        <ButtonLink2 to="/contact-us#contact">View our Portfolio</ButtonLink2>
+        <ButtonLink2 to="/portfolio">View our Portfolio</ButtonLink2>
       }
       socials={homeSocials}
     />

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Portfolio from "./pages/portfolio";
 function App() {
   return (
     <Router>
@@ -46,6 +47,16 @@ function App() {
             <Layout>
               <PageTransitionWrapper>
                 <Contact />
+              </PageTransitionWrapper>
+            </Layout>
+          }
+        />
+        <Route
+          path="/portfolio"
+          element={
+            <Layout>
+              <PageTransitionWrapper>
+                <Portfolio />
               </PageTransitionWrapper>
             </Layout>
           }

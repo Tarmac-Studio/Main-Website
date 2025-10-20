@@ -6,6 +6,7 @@ import Hero from "../components/HomeSection/Hero";
 import Solve from "../components/HomeSection/Solve";
 import Services from "../components/HomeSection/Services";
 import Portfolio from "../components/HomeSection/Portfolio";
+import Founder from "../components/HomeSection/Founder";
 
 const Home: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
       <Solve />
       <Services />
       <Portfolio />
+      <Founder />
       <Process />
       <Testimonials />
       <Studio />
