@@ -10,12 +10,16 @@ export interface PortfolioCardProps {
   project: PortfolioProject;
   visibleHeight?: number;
   mobileHeight?: number;
+  desktopScrollDistance?: number;
+  mobileScrollDistance?: number;
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
   project,
   visibleHeight = 550,
-  mobileHeight = 300,
+  mobileHeight = 350,
+  desktopScrollDistance = 4000,
+  mobileScrollDistance = 1700,
 }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -31,7 +35,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   const controls: AnimationControls = useAnimation();
   const [isHovered, setIsHovered] = useState(false);
 
-  const scrollDistance = 5000 - currentHeight;
+  const scrollDistance = isMobile
+    ? mobileScrollDistance
+    : desktopScrollDistance;
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -62,7 +68,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     <motion.div
       className="relative overflow-hidden group cursor-pointer border-2"
       style={{
-        height: `${visibleHeight}px`,
+        height: `${currentHeight}px`,
         borderImage: "linear-gradient(to bottom right, #F6F4F4, #585858) 1",
       }}
       onMouseEnter={handleMouseEnter}
@@ -90,6 +96,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           width: "100%",
           height: "auto",
           objectFit: "cover",
+          display: "block",
         }}
       />
     </motion.div>
