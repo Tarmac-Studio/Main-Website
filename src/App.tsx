@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ScrollTop, PageTransitionWrapper } from "./utils/ScrollTop";
 import Layout from "./utils/Layout";
 import Home from "./pages/Home";
@@ -6,9 +6,11 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/portfolio";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 function App() {
   return (
-    <Router>
+    <>
       <ScrollTop />
       <Routes>
         <Route
@@ -61,8 +63,18 @@ function App() {
             </Layout>
           }
         />
+        <Route
+          path="/privacy-policy"
+          element={
+            <Layout>
+              <PageTransitionWrapper>
+                <PrivacyPolicy />
+              </PageTransitionWrapper>
+            </Layout>
+          }
+        />
       </Routes>
-    </Router>
+    </>
   );
 }
 
