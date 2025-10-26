@@ -16,14 +16,14 @@ const TarmacIdea: React.FC = () => {
           </h2>
 
           <p className="mt-6 leading-relaxed text-xl">
-            Tarmac believes that the journey to a successful product should feel
+            We believe that the journey to a successful product should feel
             simple, collaborative, and exciting. That’s why we follow a proven
-            process that balances creativity, speed, and precision — so your
-            idea moves from concept to launch without the stress.
+            process that balances creativity, speed, and precision, so your idea
+            moves from concept to launch without the stress.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-left">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-left px-10">
           {steps.slice(0, 4).map((step) => (
             <div key={step.id} className="box-back md:px-8 md:py-15 px-4 py-8">
               <img
@@ -42,7 +42,7 @@ const TarmacIdea: React.FC = () => {
         </div>
 
         {steps.length > 4 && (
-          <div className="flex justify-center mb-16">
+          <div className="px-10 flex justify-center mb-16">
             <div className="w-full md:w-1/2 lg:w-1/2 box-back md:px-8 md:py-15 px-4 py-8">
               <img
                 src={steps[steps.length - 1].icon}

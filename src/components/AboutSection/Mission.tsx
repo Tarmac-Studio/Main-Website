@@ -3,7 +3,7 @@ import { aboutAssets } from "../../assets/aboutAssets";
 
 const Mission1: React.FC = () => {
   return (
-    <section className="w-full bg-black py-5 px-0 sm:px-0 md:px-0">
+    <section className="relative w-full bg-black py-5 px-0 sm:px-0 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Column */}
         <div className="max-w-4xl ml-10 px-4 sm:px-6 md:px-8">
@@ -12,9 +12,9 @@ const Mission1: React.FC = () => {
           </h2>
 
           <p className="mt-6 sub-text leading-relaxed text-xl">
-            We help founders and businesses go from idea to launch with
-            strategy-first branding, standout design, and no-code development —
-            fast, functional, and built for growth.
+            To help founders and businesses go from idea to launch with
+            strategy-first branding, standout design, and streamlined code
+            development; fast, functional, and built for growth.
           </p>
         </div>
 

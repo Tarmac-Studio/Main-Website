@@ -6,6 +6,7 @@ import deskJourney from "../assets/images/About/DeskJourney.png";
 import Aladeloye from "../assets/images/About/Aladeloye.png";
 import Gabriel from "../assets/images/About/Olajide.png";
 import Leks from "../assets/images/About/Olalere.png";
+import Kenny from "../assets/images/About/KennyAdex.png";
 import Arrow from "../assets/images/About/arrow.svg";
 import Launch from "../assets/images/About/Launch.svg";
 
@@ -20,4 +21,5 @@ export const aboutAssets = {
   Arrow,
   Leks,
   Launch,
+  Kenny,
 };
