@@ -205,3 +205,29 @@ body {
   text-align: center;
   padding: 5px;
 }
+ /* Policy Container
+ .privacy-container {
+  border-bottom: 4px solid;
+
+border-image-source: linear-gradient(260.45deg, #F6F4F4 -12.22%, #585858 103.25%);
+
+ } */
+
+
+
+ .privacy-container {
+  position: relative; /* needed for the pseudo-element */
+}
+
+/* the gradient line at the bottom */
+.privacy-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;                 /* thickness */
+  bottom: 0;                   /* stick to bottom of container */
+  background: linear-gradient(260.45deg, #F6F4F4 -12.22%, #585858 103.25%);
+  pointer-events: none;
+  transform: translateY(50px);  /* tiny gap below content — change as needed */
+}

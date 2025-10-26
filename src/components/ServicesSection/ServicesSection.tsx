@@ -62,16 +62,19 @@ const ServicesSection: React.FC = () => {
       className="relative w-full py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 text-white overflow-hidden"
       style={{
         background: `
-          radial-gradient(circle at center, #032323 0%, #032323 10%, black 90%, black 100%),
-          radial-gradient(50% 50% at 50% 120%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%)
+          radial-gradient(50% 20% at 50% 20%, rgba(0, 255, 255, 0.12) 0%, rgba(0, 255, 255, 0) 100%),
+          radial-gradient(70% 30% at 50% 60%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%),
+          black
         `,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       {/* Stars Background */}
       <img
         src={Stars}
         alt="Stars Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none scale-85"
+        className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none scale-84"
       />
 
       <div className="relative z-10 max-w-5xl md:max-w-6xl mx-auto">
