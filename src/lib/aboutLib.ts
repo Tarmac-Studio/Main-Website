@@ -29,7 +29,7 @@ export const team = [
   {
     name: "Adebayo Kehinde",
     role: "Content Creator & Social Media Manager",
-    image: aboutAssets.Aladeloye,
+    image: aboutAssets.Kenny,
   },
 ];
 
@@ -52,14 +52,14 @@ export const steps = [
     id: 3,
     title: "Agile Development",
     description:
-      "Our developers and designers work hand-in-hand, building your product in fast, flexible sprints. You’ll see real progress quickly — with working versions you can test, review, and refine along the way.",
+      "Our developers and designers work hand-in-hand, building your product in fast, flexible sprints. You’ll see real progress quickly, with working versions you can test, review, and refine along the way.",
     icon: aboutAssets.Launch,
   },
   {
     id: 4,
     title: "Testing & Quality Assurance",
     description:
-      "Before launch, we rigorously test everything: performance, security, usability, and cross-device compatibility. The goal is simple — zero surprises, maximum confidence.",
+      "Before launch, we rigorously test everything: performance, security, usability, and cross-device compatibility. The goal is simple, zero surprises, maximum confidence.",
     icon: aboutAssets.Launch,
   },
   {

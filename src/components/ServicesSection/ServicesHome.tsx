@@ -13,11 +13,11 @@ const ServicesHome: React.FC = () => {
       title="Helping Startups and Businesses launch, grow, and scale in the digital world."
       subtitle={
         <>
-          We don’t just offer services — we create solutions. Every startup is
-          different, and that’s why our approach is tailored to meet your exact
-          stage, challenges, and goals.
-          <br /> From building strong brands to scaling products, we’ve got the
-          tools, team, and talent to make it happen.
+          We don’t just offer services, we create solutions. Every startup is
+          different, and that’s why our approach is tailored at meeting your
+          exact need, solving challenges, and achieving goals. <br /> From
+          building strong brands to scaling products, we’ve got the tools, team,
+          and talent to make it happen.
         </>
       }
       primaryBtn={
