@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             </h2>
 
             <p className="text-[#E3E3E5] text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
-              Let's talk – and we will map out your launch plan together.
+              Let’s map out your launch plan together.
             </p>
           </div>
 

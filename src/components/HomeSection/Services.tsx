@@ -12,11 +12,13 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
   return (
-    <div className="border border-[#585858] md:px-12 md:py-20 px-8 py-10 rounded-[20px]">
+    <div className="border border-[#585858] md:px-9 md:py-16 px-8 py-10 rounded-[20px]">
       <h3 className="md:text-[36px] text-[26px] md:px-10 px-4 font-medium main-text mb-4 text-center">
         {title}
       </h3>
-      <p className="sub-text md:text-base text-sm text-center">{description}</p>
+      <p className="sub-text lg:text-lg md:text-base text-sm text-center">
+        {description}
+      </p>
     </div>
   );
 };
@@ -34,16 +36,16 @@ const Services: React.FC = () => {
         {/* Header */}
         <SectionHeader title="our services" />
         <Heading title="What we do" />
-        <p className="sub-text md:text-xl text-base mb-7">
-          At Tarmac Digital Studio, we don’t just provide services—we deliver
-          transformative digital solutions. Whether you're a startup building
-          from scratch or a growing business looking to scale, our expert team
-          helps you launch, grow, and thrive in today’s fast-paced digital
-          world.
+        <p className="sub-text md:text-xl text-base mb-12">
+          At Tarmac Digital Studio, we don’t just provide services, we deliver
+          digital solutions.
+          <br /> Whether you're a startup building from scratch or a growing
+          business looking to scale, our expert team helps you launch, grow, and
+          thrive in today’s fast-paced digital world.
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mb-6 ">
           {/* First 4 services in 2x2 grid */}
           {homeServices.slice(0, 4).map((service, index) => (
             <ServiceCard

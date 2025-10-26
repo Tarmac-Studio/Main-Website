@@ -63,7 +63,7 @@ export const steps = [
     id: 2,
     title: "Design & Build",
     description:
-      "We design and build everything — branding, UI, landing, assets.",
+      "We design and build everything branding, UI, landing, assets.",
     icon: assets.Design,
   },
   {

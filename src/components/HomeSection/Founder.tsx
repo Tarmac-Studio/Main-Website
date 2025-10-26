@@ -45,7 +45,7 @@ const Founder: React.FC<FounderSectionProps> = () => {
               </h3>
             </div>
 
-            <h2 className="text-[26px] sm:text-3xl md:text-4xl font-medium leading-tight main-text transition-all duration-1000">
+            <h2 className="text-[26px] sm:text-3xl md:text-4xl max-w-sm font-medium leading-tight main-text transition-all duration-1000">
               {content.title}
             </h2>
 
@@ -55,12 +55,12 @@ const Founder: React.FC<FounderSectionProps> = () => {
           </div>
 
           {/* Right Section */}
-          <div className="flex justify-center items-center transition-all duration-1000">
+          <div className="flex justify-center  transition-all duration-1000">
             <div className="w-full overflow-hidden rounded-2xl flex justify-center">
               <img
                 src={content.img}
                 alt="Founder statue"
-                className="w-full h-auto max-h-100 sm:max-h-100 md:max-h-100 object-cover mx-auto rounded-2xl transition-all duration-1000"
+                className="w-full h-auto md:w-auto sm:max-h-100 md:max-h-150 object-cover mx-auto rounded-2xl transition-all duration-1000"
                 draggable={false}
               />
             </div>
