@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import stars1 from "../../assets/images/About/stars1.svg";
 
 const ContactForm: React.FC = () => {
@@ -166,7 +167,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-black text-white">
+    <section className="relative text-white bg-transparent">
       {/* Stars Background */}
       <img
         src={stars1}
@@ -311,13 +312,17 @@ const ContactForm: React.FC = () => {
                   } flex-shrink-0 transition-colors duration-200 disabled:opacity-50`}
                 />
                 <span className="text-[15px] font-medium leading-[100%] text-gray-300">
-                  I agree to the Privacy Policy
+                  I agree to the{" "}
+                  <Link
+                    to="/privacy-policy"
+                    className="text-[#00FFFF] hover:underline focus:outline-none"
+                  >
+                    Privacy Policy
+                  </Link>
                 </span>
               </div>
               {errors.agreeToPolicy && (
-                <p className="text-red-500 text-[12px] mt-1">
-                  {errors.agreeToPolicy}
-                </p>
+                <p className="text-red-500 text-[12px] mt-1">{errors.agreeToPolicy}</p>
               )}
 
               {/* Submit Button */}

@@ -11,7 +11,7 @@ const AboutHome: React.FC = () => {
       backgroundImage={aboutAssets.About}
       badgeText="TARMAC DIGITAL STUDIO"
       title="Building Digital Products That Drive Growth"
-      subtitle="At Tarmac, we’re not just developers or designers — we’re your product partners. From idea to launch, we turn your vision into impactful digital solutions that scale."
+      subtitle="At Tarmac, we don’t just design or develop products, we stay with you all steps of the way, you can say we’re your product partners. From idea to launch, we turn your vision into impactful digital solutions that scale."
       primaryBtn={<ButtonLink1 to="/contact">Work with Us</ButtonLink1>}
       secondaryBtn={
         <ButtonLink2 to="/portfolio">View our Portfolio</ButtonLink2>
