@@ -167,7 +167,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-black text-white">
+    <section className="relative text-white bg-transparent">
       {/* Stars Background */}
       <img
         src={stars1}

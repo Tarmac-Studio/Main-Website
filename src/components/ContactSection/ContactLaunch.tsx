@@ -8,7 +8,7 @@ import ContactCard from "./ContactCard";
 
 const ContactLaunch: React.FC = () => {
   return (
-    <section className="relative bg-black text-white py-20 px-4 sm:px-6 md:px-10">
+    <section className="relative text-white py-20 px-4 sm:px-6 md:px-10 bg-transparent">
       <div className="max-w-6xl mx-auto text-center items-center">
         {/* Label */}
         <SectionHeader title="CONTACT US" />
