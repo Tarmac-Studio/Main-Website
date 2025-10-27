@@ -166,7 +166,6 @@ body {
     );
 }
 
-
 /* The core container that holds the visible portion of the image */
 .portfolio-card {
   /* CRITICAL: Hides the part of the image not in view */
@@ -183,7 +182,6 @@ body {
   transform-origin: center;
   will-change: transform, box-shadow; /* Optimization hint */
 }
-
 
 /* PortfolioGrid.css */
 .portfolio-container {

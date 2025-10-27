@@ -8,13 +8,13 @@ const Team: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
-          <h2 className="main-text font-medium text-4xl md:text-5xl  leading-tight mb-6">
+          <h2 className="main-text font-medium text-4xl md:text-5xl leading-tight mb-6">
             The People Who Power Tarmac
           </h2>
-          <p className="sub-text font-medium text-xl max-w-md mx-auto">
+          <p className="sub-text font-normal leading-relaxed text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
             Every successful project starts with a team that cares. At Tarmac,
             our crew is a blend of designers, developers, strategists, and
-            storytellers — all united by one mission: to build products that
+            storytellers all united by one mission: to build products that
             matter.
           </p>
         </div>
