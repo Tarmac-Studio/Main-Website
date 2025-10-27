@@ -3,7 +3,18 @@ import { aboutAssets } from "../../assets/aboutAssets";
 
 const Mission1: React.FC = () => {
   return (
-    <section className="relative w-full bg-black py-5 px-0 sm:px-0 md:px-0">
+    <section
+      className="relative w-full py-5 px-0 sm:px-0 md:px-0"
+      style={{
+        background: `
+          radial-gradient(50% 70% at 50% 20%, rgba(0, 255, 255, 0.12) 20%, rgba(0, 255, 255, 0) 100%),
+          black
+        `,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Column */}
         <div className="max-w-4xl ml-10 px-4 sm:px-6 md:px-8">

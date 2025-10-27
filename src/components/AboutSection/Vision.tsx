@@ -1,9 +1,28 @@
 import React from "react";
 import { aboutAssets } from "../../assets/aboutAssets";
+import Stars from "../../assets/images/About/Stars.png";
 
 const Vision: React.FC = () => {
   return (
-    <section className="w-full bg-black py-5 px-0 sm:px-0 md:px-0">
+    <section
+      className="w-full py-5 px-0 sm:px-0 md:px-0"
+      style={{
+        background: `
+          radial-gradient(50% 70% at 50% 20%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%),
+          black
+        `,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+
+      {/* Stars Background */}
+      <img
+        src={Stars}
+        alt="Stars Background"
+        className="absolute inset-0 w-full h-[45%] object-cover opacity-40 pointer-events-none scale-80"
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Column */}
         <div className="w-full">
