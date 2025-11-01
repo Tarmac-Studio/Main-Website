@@ -4,7 +4,6 @@ import Team from "../components/AboutSection/Team";
 import Mission from "../components/AboutSection/Mission";
 import Vision from "../components/AboutSection/Vision";
 import TarmacIdea from "../components/AboutSection/TarmacIdea";
-import Starss from "../assets/images/About/stars1.svg";
 
 const About = () => {
   return (
