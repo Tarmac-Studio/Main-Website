@@ -15,7 +15,7 @@ const TarmacIdea: React.FC = () => {
             From Idea to Impact: How <br /> We Work With You
           </h2>
 
-          <p className="mt-6 leading-relaxed text-xl">
+          <p className="mt-6 leading-relaxed text-sm sm:text-base md:text-[19px]">
             We believe that the journey to a successful product should feel
             simple, collaborative, and exciting. That’s why we follow a proven
             process that balances creativity, speed, and precision, so your idea

@@ -3,8 +3,17 @@ import { aboutAssets } from "../../assets/aboutAssets";
 
 const TarmacJourney: React.FC = () => {
   return (
-    <section className="relative w-full tarmac-journey font-medium sub-text py-20 px-4 sm:px-6 md:px-8">
-      <div className="absolute inset-0 bg-black/80"></div>
+    <section
+      className="relative w-full font-medium sub-text py-20 px-4 sm:px-6 md:px-8"
+      style={{
+        background: `
+          radial-gradient(50% 70% at 50% 20%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%),
+          black
+        `,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="relative z-10 max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div>
           <p className="cyan-text uppercase text-sm font-semibold tracking-wider">

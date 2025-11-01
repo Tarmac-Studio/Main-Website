@@ -14,7 +14,6 @@ const Mission1: React.FC = () => {
         backgroundSize: "cover",
       }}
     >
-      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Column */}
         <div className="max-w-4xl ml-10 px-4 sm:px-6 md:px-8">

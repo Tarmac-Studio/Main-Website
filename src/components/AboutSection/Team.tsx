@@ -11,11 +11,12 @@ const Team: React.FC = () => {
           <h2 className="main-text font-medium text-4xl md:text-5xl leading-tight mb-6">
             The People Who Power Tarmac
           </h2>
-          <p className="sub-text font-normal leading-relaxed text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
-            Every successful project starts with a team that cares. At Tarmac,
-            our crew is a blend of designers, developers, strategists, and
-            storytellers all united by one mission: to build products that
-            matter.
+          <p className="sub-text font-normal leading-relaxed text-base sm:text-lg  max-w-120 mx-auto">
+            Every successful project starts with a team that cares.
+            <br />
+            At Tarmac, our crew is a blend of designers, developers,
+            strategists, and storytellers, all united by one mission: to build
+            products that matter.
           </p>
         </div>
 

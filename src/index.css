@@ -93,9 +93,9 @@ body {
 
 .tarmac-journey {
   background: radial-gradient(
-    82.54% 147.56% at 50% 50%,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 255, 255, 0.5) 100%
+    50% 50% at 50% 50%,
+    rgba(0, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 
@@ -203,7 +203,7 @@ body {
   text-align: center;
   padding: 5px;
 }
- /* Policy Container
+/* Policy Container
  .privacy-container {
   border-bottom: 4px solid;
 
@@ -211,9 +211,7 @@ border-image-source: linear-gradient(260.45deg, #F6F4F4 -12.22%, #585858 103.25%
 
  } */
 
-
-
- .privacy-container {
+.privacy-container {
   position: relative; /* needed for the pseudo-element */
 }
 
@@ -223,9 +221,9 @@ border-image-source: linear-gradient(260.45deg, #F6F4F4 -12.22%, #585858 103.25%
   position: absolute;
   left: 0;
   right: 0;
-  height: 4px;                 /* thickness */
-  bottom: 0;                   /* stick to bottom of container */
-  background: linear-gradient(260.45deg, #F6F4F4 -12.22%, #585858 103.25%);
+  height: 4px; /* thickness */
+  bottom: 0; /* stick to bottom of container */
+  background: linear-gradient(260.45deg, #f6f4f4 -12.22%, #585858 103.25%);
   pointer-events: none;
-  transform: translateY(50px);  /* tiny gap below content — change as needed */
+  transform: translateY(50px); /* tiny gap below content — change as needed */
 }

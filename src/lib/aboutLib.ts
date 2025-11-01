@@ -14,12 +14,12 @@ export const team = [
   {
     name: "Bolarinwa Boluwatife",
     role: "Co-Founder & Back End Lead",
-    image: aboutAssets.Aladeloye,
+    image: aboutAssets.Bolex,
   },
   {
     name: "Adebayo Taiwo",
     role: "Project Manager & Software Developer",
-    image: aboutAssets.Leks,
+    image: aboutAssets.Titan,
   },
   {
     name: "Olajide Gabriel",

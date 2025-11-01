@@ -7,6 +7,8 @@ import Aladeloye from "../assets/images/About/Aladeloye.png";
 import Gabriel from "../assets/images/About/Olajide.png";
 import Leks from "../assets/images/About/Olalere.png";
 import Kenny from "../assets/images/About/KennyAdex.png";
+import Bolex from "../assets/images/About/Bolex.png";
+import Titan from "../assets/images/About/Titan.png";
 import Arrow from "../assets/images/About/arrow.svg";
 import Launch from "../assets/images/About/Launch.svg";
 
@@ -22,4 +24,6 @@ export const aboutAssets = {
   Leks,
   Launch,
   Kenny,
+  Bolex,
+  Titan,
 };
