@@ -7,6 +7,9 @@ import luxe from "../assets/images/portfolio/luxe-auto.png";
 import social from "../assets/images/portfolio/social-queue.png";
 import unique from "../assets/images/portfolio/unique.png";
 import use from "../assets/images/portfolio/use for now.png";
+import lider from "../assets/images/portfolio/lider.png";
+import revolution from "../assets/images/portfolio/revolution.png";
+import sixth_sense from "../assets/images/portfolio/sixth-sense.jpg";
 
 export const portfolioAssets = {
   portfolioBackground,
@@ -18,4 +21,7 @@ export const portfolioAssets = {
   social,
   unique,
   use,
+  lider,
+  revolution,
+  sixth_sense,
 };
