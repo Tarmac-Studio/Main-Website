@@ -56,6 +56,13 @@ body {
   background-clip: text;
   color: transparent;
 }
+.highlight-text {
+  background: #00ffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 
 .sub-text {
   color: #e3e3e5;

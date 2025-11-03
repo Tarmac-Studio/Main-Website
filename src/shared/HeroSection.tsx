@@ -20,6 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   secondaryBtn,
   socials,
 }) => {
+  const words = title.split(" ");
   return (
     <section
       className="relative h-screen w-full flex flex-col items-center justify-between text-center text-white"
@@ -40,7 +41,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
-          {title}
+          {words.map((word, index) => {
+            if (word === "Startups") {
+              return (
+                <span key={index} className="highlight-text">
+                  {word}{" "}
+                </span>
+              );
+            } else if (word === "Businesses") {
+              return (
+                <span key={index} className="highlight-text">
+                  {word}{" "}
+                </span>
+              );
+            } else {
+              return word + " ";
+            }
+          })}
         </h1>
         {/* <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl main-text font-medium leading-tight">
           {title}

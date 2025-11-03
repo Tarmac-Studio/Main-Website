@@ -1,6 +1,6 @@
 import React from "react";
 import { services } from "../../lib/ServiceLib";
-import Stars from "../../assets/images/About/Stars.png";
+// import Stars from "../../assets/images/About/Stars.png";
 
 interface ServiceCardProps {
   intro: string;
@@ -16,39 +16,39 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   deliverables,
 }) => {
   return (
-    <div className="service-border mb-10 sm:mb-25">
-      <div className="pb-6 sm:pb-8 mb-6 sm:mb-8">
-        <div className="mx-0 sm:mx-10">
-          {/* Intro */}
-          <p className="cyan-text uppercase text-xs sm:text-sm font-semibold tracking-wider mb-3 sm:mb-5">
-            {intro}
-          </p>
+    <div className="service-border mb-10 sm:mb-16 ">
+      <div className="px-6 sm:px-10 lg:px-12 py-8 sm:py-10">
+        {/* Intro */}
+        <p className="cyan-text uppercase text-xs sm:text-sm font-semibold tracking-wider mb-4 sm:mb-6 md:text-justify text-center">
+          {intro}
+        </p>
 
-          {/* Title */}
-          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl main-text font-medium mb-4 sm:mb-5 leading-snug">
-            {title}
-          </h3>
+        {/* Title */}
+        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl main-text font-medium mb-5 sm:mb-6 lg:mb-8 leading-tight">
+          {title}
+        </h3>
 
-          {/* Description */}
-          <p className="sub-text text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-10">
-            {description}
-          </p>
+        {/* Description */}
+        <p className="sub-text text-base sm:text-lg md:text-[19px] leading-relaxed mb-8 sm:mb-10 lg:mb-12 max-w-6xl">
+          {description}
+        </p>
 
-          <div className="mx-10">
-            {/* Deliverables Title */}
-            <h2 className="main-text text-sm sm:text-lg md:text-xl font-semibold tracking-wider mb-4 sm:mb-6">
-              What We Deliver:
-            </h2>
+        {/* Deliverables Section */}
+        <div className="pl-0 sm:pl-6 lg:pl-8">
+          <h4 className="main-text text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-5 sm:mb-6">
+            What We Deliver:
+          </h4>
 
-            {/* Deliverables List */}
-            <ul className="sub-text space-y-1 sm:space-y-2 list-disc list-outside">
-              {deliverables.map((item, index) => (
-                <li key={index} className="text-sm sm:text-base md:text-lg">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className="sub-text space-y-2 sm:space-y-3 list-disc list-outside pl-5 sm:pl-6">
+            {deliverables.map((item, index) => (
+              <li
+                key={index}
+                className="text-sm sm:text-base md:text-lg leading-relaxed"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
@@ -71,11 +71,11 @@ const ServicesSection: React.FC = () => {
       }}
     >
       {/* Stars Background */}
-      <img
+      {/* <img
         src={Stars}
         alt="Stars Background"
         className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none scale-84"
-      />
+      /> */}
 
       <div className="relative z-10 max-w-5xl md:max-w-6xl mx-auto">
         {services.map((service, index) => (
