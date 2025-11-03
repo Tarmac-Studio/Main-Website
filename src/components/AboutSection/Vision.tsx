@@ -14,13 +14,13 @@ const Vision: React.FC = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center relative z-10 px-4 md:px-6">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 order-1 md:order-2">
-          <h2 className="main-text font-medium text-5xl md:text-6xl lg:text-8xl leading-tight ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
+        <div className="px-6 sm:px-8 md:px-10 py-5 order-1 md:order-2">
+          <h2 className="max-w-100 main-text font-medium text-5xl md:text-6xl lg:text-8xl leading-tight ">
             Our <br /> Vision
           </h2>
 
-          <p className="mt-6 sub-text leading-relaxed text-xl text-left">
+          <p className="mt-6 sub-text leading-relaxed text-xl text-left max-w-150">
             To be the creative launchpad where bold ideas become impactful
             digital experiences.
           </p>
