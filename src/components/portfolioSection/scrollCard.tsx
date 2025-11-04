@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 export interface PortfolioProject {
   id: string | number;
   imageUrl: string;
+  link?: string;
 }
 
 export interface PortfolioCardProps {
@@ -64,6 +65,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     });
   };
 
+  const handleClick = () => {
+    if (project.link) {
+      window.open(project.link, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <motion.div
       className="relative overflow-hidden group cursor-pointer border-2"
@@ -73,6 +80,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
       whileHover={{
         scale: 1.0,
         boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
