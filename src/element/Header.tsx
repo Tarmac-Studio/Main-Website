@@ -82,7 +82,7 @@ const Header: React.FC = () => {
         <Link
           target="blank"
           to="https://calendly.com/tarmacdigitalstudio"
-          className="hidden lg:flex cyan-back sat-font cursor-pointer text-black font-medium text-base px-8 py-3 rounded-full items-center justify-center gap-2 transition-colors duration-300"
+          className="hidden lg:flex cyan-back sat-font border-[#00ffff] cursor-pointer text-black font-medium text-base px-8 py-3 rounded-full items-center justify-center gap-2 transition-colors duration-300"
         >
           Book a Strategy Call
         </Link>
