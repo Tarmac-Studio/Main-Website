@@ -60,7 +60,9 @@ const Footer: React.FC = () => {
         <div className="hidden lg:grid lg:grid-cols-3 items-center gap-6  px-6 xl:px-30 lg:px-5">
           {/* Logo */}
           <div className="flex items-center justify-start">
-            <img src={assets.darkLogo} alt="Logo" className="h-6 w-auto" />
+            <a href="/">
+              <img src={assets.darkLogo} alt="Logo" className="h-6 w-auto" />
+            </a>
           </div>
 
           {/* Social Icons - Center */}
@@ -131,22 +133,6 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Mobile Navigation - Stacked Buttons */}
-          <div className="space-y-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.slug}
-                to={item.slug === "home" ? "/" : `/${item.slug}`}
-                onClick={() => handleNavClick(item.slug)}
-                className={`block w-full text-center py-2 px-6 rounded-full border transition-colors duration-300 ${
-                  activeItem === item.slug
-                    ? "bg-[#00ffff] text-black cyan-back"
-                    : "border-white text-white hover:border-[#00ffff] hover:text-[#00ffff] "
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

@@ -52,7 +52,9 @@ const Header: React.FC = () => {
       <nav className="max-w-8xl mx-auto flex items-center justify-between px-5 xl:px-30 lg:px-5 py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={assets.Logo} alt="Logo" className="h-6 w-auto" />
+          <a href="/">
+            <img src={assets.Logo} alt="Logo" className="h-6 w-auto" />
+          </a>
         </div>
 
         {/* Desktop Navigation - Centered */}
