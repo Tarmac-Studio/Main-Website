@@ -178,6 +178,10 @@ body.menu-open {
       rgba(0, 255, 255, 0.8) 90.52%
     );
 }
+.contact-back {
+  background: #00000040;
+}
+
 /* The core container that holds the visible portion of the image */
 .portfolio-card {
   /* CRITICAL: Hides the part of the image not in view */

@@ -36,7 +36,7 @@ const Team: React.FC = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full p-2 object-cover rounded-[20px]"
+                    className="w-full h-auto p-2 object-cover rounded-[20px]"
                   />
                 </div>
               </div>
