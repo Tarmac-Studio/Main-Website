@@ -4,14 +4,14 @@ import { aboutAssets } from "../../assets/aboutAssets";
 
 const Team: React.FC = () => {
   return (
-    <section className="w-full bg-black text-white py-20">
+    <section className="w-full bg-black md:py-30 py-20">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
-          <h2 className="main-text font-medium text-4xl md:text-5xl leading-tight mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-3  md:mb-14 mb-10">
+          <h2 className="main-text font-medium text-4xl md:text-5xl leading-tight mb-2">
             The People Who Power Tarmac
           </h2>
-          <p className="sub-text font-normal leading-relaxed text-base sm:text-lg  max-w-120 mx-auto">
+          <p className="sub-text font-normal leading-relaxed text-base sm:text-lg max-w-120 mx-auto">
             Every successful project starts with a team that cares.
             <br />
             At Tarmac, our crew is a blend of designers, developers,
@@ -23,7 +23,13 @@ const Team: React.FC = () => {
         {/* Team grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           {team.map((member, i) => (
-            <div key={i} className="flex flex-col items-start">
+            <a
+              key={i}
+              href={member.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-start"
+            >
               {/* Frame */}
               <div className="rounded-[20px] border-2 border-[#00ffff] w-full">
                 <div className="rounded-[20px] overflow-hidden">
@@ -37,20 +43,14 @@ const Team: React.FC = () => {
 
               <div className="flex justify-between items-center w-full mt-4">
                 <div>
-                  <h3 className="text-2xl font-medium main-text">
+                  <h3 className="text-[23px] md:text-[26px] font-medium main-text">
                     {member.name}
                   </h3>
-                  <p className="text-base sub-text italic">{member.role}</p>
+                  <p className="text-[15px] sub-text italic">{member.role}</p>
                 </div>
-                <a>
-                  <img
-                    src={aboutAssets.Arrow}
-                    alt=""
-                    className="w-full h-auto"
-                  />
-                </a>
+                <img src={aboutAssets.Arrow} alt="" className="w-8 h-auto" />
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

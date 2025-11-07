@@ -18,7 +18,11 @@ const Header: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+    if (menuOpen) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
   }, [menuOpen]);
 
   useEffect(() => {
@@ -104,7 +108,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed top-0 right-0 w-full h-screen overflow-hidden bg-black/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out lg:hidden ${
+          className={`fixed top-0 right-0 w-full h-screen overflow-y-hidden bg-black/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out lg:hidden ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >

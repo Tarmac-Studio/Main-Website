@@ -21,7 +21,7 @@ const Mission1: React.FC = () => {
             Our <br /> Mission
           </h2>
 
-          <p className="mt-6 sub-text leading-relaxed text-xl text-left max-w-150">
+          <p className="mt-6 sub-text leading-relaxed text-xl text-left max-w-170">
             To help founders and businesses go from idea to launch with
             strategy-first branding, standout design, and streamlined code
             development; fast, functional, and built for growth.

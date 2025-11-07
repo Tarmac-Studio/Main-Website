@@ -4,7 +4,7 @@ import { aboutAssets } from "../../assets/aboutAssets";
 const TarmacJourney: React.FC = () => {
   return (
     <section
-      className="relative w-full font-medium sub-text "
+      className="relative w-full font-medium"
       style={{
         background: `
           radial-gradient(
@@ -18,41 +18,40 @@ const TarmacJourney: React.FC = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center sub-text">
           {/* Left Content */}
-          <div className="py-12 sm:py-16 md:py-20 lg:py-24  px-4 sm:px-6 lg:px-8">
-            {/* Intro Tag */}
-            <p className="cyan-text uppercase text-xs sm:text-sm font-semibold tracking-wider">
+          <div className="py-8 sm:py-12 md:py-16 lg:py-20 order-1 px-4 ">
+            <p className="uppercase text-xs sm:text-sm font-medium tracking-wider mb-4 sm:mb-6 cyan-text">
               Tarmac Digital Studio
             </p>
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl main-text font-medium leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight mb-6 main-text">
               From Vision to Reality:
-              <br /> The Tarmac Journey
+              <br className="hidden sm:block" />
+              <span className="block sm:inline"> The Tarmac Journey</span>
             </h2>
 
             {/* First Paragraph */}
-            <p className="text-base sm:text-lg leading-relaxed">
-              Tarmac was born out of one frustration: seeing great ideas fail
-              because founders couldn't find the right tech team, and some had
+            <p className="text-base lg:text-lg leading-relaxed ">
+              Tarmac was born out of one frustration; seeing great ideas fail
+              because founders couldn’t find the right tech team, and some had
               to hire 3 to 4 different teams to bring their ideas to life. We
               saw startups struggle with unreliable teams, misaligned design and
               faulty code, and endless delays.
             </p>
 
             {/* Second Paragraph */}
-            <div>
-              <p className="text-base sm:text-lg leading-relaxed mb-4">
+            <div className="mb-3">
+              <p className="text-base lg:text-lg leading-relaxed mb-4">
                 So, we built Tarmac to be different.
-                <br />
-                <span className="font-semibold">A place where:</span>
+                <br />A place where:
               </p>
 
               {/* List */}
-              <ul className="list-disc list-inside mt-4 space-y-2 sub-text">
-                <li>Ideas are understood deeply before they’re built.</li>
+              <ul className="list-disc list-inside space-y-2 text-base lg:text-lg pl-2 sm:pl-4 leading-relaxed">
+                <li>Ideas are understood deeply before they're built.</li>
                 <li>
                   Design and development work in sync (no loss in
                   communication).
@@ -62,19 +61,21 @@ const TarmacJourney: React.FC = () => {
             </div>
 
             {/* Closing Paragraph */}
-            <p className="text-base sm:text-lg leading-relaxed">
+            <p className="text-base lg:text-lg leading-relaxed">
               Now, we help founders, startups, and businesses bring their ideas
               to life faster, smarter, and reach the right audience.
             </p>
           </div>
 
           {/* Right Image */}
-          <div className="flex py-0 px-0">
-            <img
-              src={aboutAssets.deskJourney}
-              alt="Tarmac Digital Studio workspace"
-              className="w-full  h-auto object-cover"
-            />
+          <div className="flex order-2 lg:order-2 w-full">
+            <div className="w-full relative overflow-hidden ">
+              <img
+                src={aboutAssets.deskJourney}
+                alt="Tarmac Digital Studio workspace"
+                className="w-full h-full min-h-[250px] sm:min-h-[350px] md:min-h-[450px] lg:min-h-[500px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

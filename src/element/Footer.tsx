@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { assets, socials } from "../assets/homeAssets";
 
 const Footer: React.FC = () => {
-  // const [setMenuOpen] = useState(false);
-
+  const location = useLocation();
   const [activeItem, setActiveItem] = useState("home");
-  const handleNavClick = (item: string) => {
-    setActiveItem(item);
-    // setMenuOpen(false);
-  };
+
+  useEffect(() => {
+    const currentPath = location.pathname.slice(1) || "home";
+    setActiveItem(currentPath.toLowerCase());
+  }, [location]);
+
   const navItems = [
     { label: "Home", slug: "home" },
     { label: "Services", slug: "services" },
@@ -18,8 +19,12 @@ const Footer: React.FC = () => {
     { label: "Contact US", slug: "contact" },
   ];
 
+  const handleNavClick = (item: string) => {
+    setActiveItem(item);
+  };
+
   return (
-    <footer className="bg-black text-white py-30 pb-10">
+    <footer className="bg-black text-white py-20 pb-10">
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Main Content */}
@@ -46,7 +51,7 @@ const Footer: React.FC = () => {
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-[#00FFFF] text-black cyan-back px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300"
+              className="border-[#00FFFF] text-black cyan-back px-6 sm:px-8 py-2 md:py-3 lg:py-4 rounded-full text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium w-full lg:max-w-[450px] text-center transition-colors duration-300"
             >
               Contact Us
             </Link>
@@ -55,7 +60,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Divider */}
-      <div className="border-t footer-border pt-8">
+      <div className="border-t footer-border pt-8 pb-0">
         {/* Desktop Layout */}
         <div className="hidden lg:grid lg:grid-cols-3 items-center gap-6  px-6 xl:px-30 lg:px-5">
           {/* Logo */}
@@ -86,7 +91,7 @@ const Footer: React.FC = () => {
 
           {/* Navigation */}
           <div className="flex items-center justify-end">
-            <nav className="border border-[#494949] rounded-full px-6 py-3">
+            <nav className="border border-[#494949] rounded-full px-6 py-3 mb-0">
               <ul className="flex items-center gap-6 text-sm">
                 {navItems.map((item) => (
                   <li key={item.slug}>
@@ -111,7 +116,7 @@ const Footer: React.FC = () => {
         {/* Mobile Layout */}
         <div className="block lg:hidden px-5 ">
           {/* Logo and Social Icons */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-0">
             <img src={assets.darkLogo} alt="Logo" className="h-6 w-auto" />
             <div className="flex items-center gap-6">
               {socials.map((social) => (

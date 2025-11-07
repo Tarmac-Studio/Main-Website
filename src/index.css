@@ -41,6 +41,12 @@ html {
 body {
   font-family: "Satoshi", "sans-serif";
 }
+body.menu-open {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
 .inter-font {
   font-family: "Inter", sans-serif;
 }
@@ -172,7 +178,6 @@ body {
       rgba(0, 255, 255, 0.8) 90.52%
     );
 }
-
 /* The core container that holds the visible portion of the image */
 .portfolio-card {
   /* CRITICAL: Hides the part of the image not in view */

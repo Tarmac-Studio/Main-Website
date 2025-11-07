@@ -4,7 +4,7 @@ import { aboutAssets } from "../../assets/aboutAssets";
 const Vision: React.FC = () => {
   return (
     <section
-      className="w-full py-5 md:py-0 px-0 sm:px-0 md:px-0 pb-0 relative"
+      className="w-full py-5 md:py-0 px-0 sm:px-0 md:px-0 pb-20 relative"
       style={{
         background: `
           radial-gradient(50% 70% at 50% 20%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%),
@@ -15,7 +15,7 @@ const Vision: React.FC = () => {
       }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
-        <div className="px-6 sm:px-8 md:px-10 py-5 order-1 md:order-2">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-10 py-5 order-1 md:order-2">
           <h2 className="max-w-100 main-text font-medium text-5xl md:text-6xl lg:text-8xl leading-tight ">
             Our <br /> Vision
           </h2>
