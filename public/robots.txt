@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /thank-you/
+Disallow: /*.pdf$
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.tarmacdigitalstudio.com/sitemap.xml
