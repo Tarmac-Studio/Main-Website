@@ -2,8 +2,13 @@ import ContactHome from "../components/ContactSection/ContactHome";
 import ContactLaunch from "../components/ContactSection/ContactLaunch";
 import ContactForm from "../components/ContactSection/ContactForm";
 import Studio from "../shared/Studio";
+import { usePageMeta } from "../utils/Meta";
 
 const Contact = () => {
+  usePageMeta(
+    "Contact Us | Tarmac Digital Studio",
+    "Let’s talk about your goals and how Tarmac can help bring them to life. Whether it’s branding, product design, development, SEO, or social media, we’re here to make it happen.."
+  );
   return (
     <>
       <ContactHome />
@@ -22,7 +27,7 @@ const Contact = () => {
       >
         <ContactLaunch />
         <ContactForm />
-      <Studio />
+        <Studio />
       </section>
     </>
   );
