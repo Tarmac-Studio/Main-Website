@@ -21,7 +21,7 @@ const ServicesHome: React.FC = () => {
         </>
       }
       primaryBtn={
-        <ButtonLink1 target="_self" to="/contact-us">
+        <ButtonLink1 target="_self" to="/contact">
           Work with Us
         </ButtonLink1>
       }

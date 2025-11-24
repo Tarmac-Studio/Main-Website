@@ -33,7 +33,7 @@ export const team = [
   },
   {
     name: "Adebayo Kehinde",
-    role: "Content Creator & Social Media Manager",
+    role: "Software Dev & Social Media Manager",
     image: aboutAssets.Kenny,
     link: "https://github.com/Kennyadex",
   },

@@ -114,7 +114,7 @@ const ContactForm: React.FC = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          // access_key: "9e6d66a5-8d13-49ae-b62d-2d06d3ab3ce4",
+          access_key: "9e6d66a5-8d13-49ae-b62d-2d06d3ab3ce4",
           subject: `New Contact Form Message from ${formData.firstName} ${formData.lastName}`,
           from_name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
